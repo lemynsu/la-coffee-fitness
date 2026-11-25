@@ -1,0 +1,41 @@
+:root {
+  --bg: #000;
+  --text: #f2f2f2;
+  --muted: #9a9a9a;
+  --line: #222;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+h1, h2, .navbar-brand {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+/* small uppercase labels */
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* navbar */
+.navbar { background: var(--bg); border-bottom: 1px solid var(--line); }
+.navbar .nav-link { color: var(--muted); }
+.navbar .nav-link.router-link-exact-active { color: var(--text); font-weight: 600; }
+
+/* editorial sections */
+.section { padding: 4rem 0; border-bottom: 1px solid var(--line); }
+.section-title { font-size: 1.8rem; text-transform: uppercase; margin: 0.25rem 0; }
+.section-question { color: var(--text); margin-bottom: 1.25rem; }
+.section-text { color: var(--muted); line-height: 1.7; }
+.section-text strong { color: var(--text); }
+
+.hero { padding: 4rem 0 3rem; }
+.hero h1 { font-size: 2.6rem; line-height: 1.15; }
+.hero p { color: var(--muted); max-width: 560px; }
